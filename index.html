@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Mercado Preso</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+        <img src="./assets/Logo.png" alt="Logo Mercado Preso">
+        
+        <div id="pesquisa">
+            <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+        </div>
+
+        <!-- Icons do cabeçalho -->
+        <div id="carrinho">
+            <img src="./assets/Profile.svg" alt="Profile">
+            <img src="./assets/Carrinho.svg" alt="Carrinho de compras" title="Carrinho de compras"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <img src="./assets/Config.svg" alt="Configurações">
+        </div>
+
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 id="offcanvasRightLabel">Seu carrinho</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        0 produtos adicionados.
+    </div>
+    </div>
+
+    <!-- Carrosel de imagens -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/banner1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner3.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="line-top">
+        <h3>Linha Gamer > Headset</h>
+            <hr>
+    </div>
+
+    <!-- Conteúdo -->
+    <main>
+    
+        <!-- Cards dos produtos -->
+        <div class="card" style="width: 18rem;">
+            <img src="./images/fone.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top: 5px;">Fone de ouvido GT-G10</h5>
+                <p class="card-text">• Compatível com Xbox e PS4.<br>• É monaural.<br>• Microfone flexível incorporado.<br>• Tipo de conector: USB.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Fone2.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Headset Gamer H2232D</h5>
+                <p class="card-text">• Tipo de conector: Jack 3.5 mm.<br>• O comprimento do cabo é de 2.2m.<br>• Som superior e ilimitado.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Fone3.webp" class="card-img-top" alt="..." style="margin-top: 5px;">
+                <div class="card-body">
+                <h5 class="card-title" style="margin-top: 16px;">Headset Gamer HyperX</h5>
+                <p class="card-text">• Compatível com Xbox One, PS4 e Nintendo Switch.<br>• Tem cancelamento de ruído.<br>• Microfone flexível incorporado.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Fone4.webp" class="card-img-top" alt="..." style="margin-top: 5px;">
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top: 42px;">Headset Gamer Redragon</h5>
+                <p class="card-text">• Compatível com Xbox e PS4.<br>• Tem cancelamento de ruído.<br>• Microfone flexível incorporado.<br>• Inclui microfone.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        
+
+        <!-- Modal-Fones -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fone de ouvido GT-G10</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Na rua, no ônibus ou no escritório, tenha sempre o seu fone de ouvido Tedge à mão e afaste-se da rotina por um tempo! Você poderá apreciar a música que mais gosta e receber chamadas telefônicas claras onde quer que esteja, sem perder o contato com o ambiente.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 327,49 em 12x R$31,23</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Headset Gamer H2232D</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Experimente a adrenalina de mergulhar na cena de outra maneira! Ter fones de ouvido específicos para jogos muda completamente sua experiência. Com os Havit H2232D, você não perde nenhum detalhe e ouve o áudio como ele foi pensado pelos criadores.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 137 em 12x R$13,06</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Headset Gamer HyperX</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Experimente a adrenalina de mergulhar na cena de outra maneira! Ter fones de ouvido específicos para jogos muda completamente sua experiência. Com os HyperX Stinger Core, você não perde nenhum detalhe e ouve o áudio como ele foi pensado pelos criadores.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 199 em 12x R$16,58</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Headset Gamer Redragon</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Experimente a adrenalina de mergulhar na cena de outra maneira! Ter fones de ouvido específicos para jogos muda completamente sua experiência. Com os Redragon Zeus 2, você não perde nenhum detalhe e ouve o áudio como ele foi pensado pelos criadores.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 83 em 12x R$6,92</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="line-top">
+        <h3>Linha Gamer > Mouse</h>
+            <hr>
+    </div>
+
+    <main>
+        <!-- Card-Mouses -->
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Mouse.webp" class="card-img-top" alt="..." style="margin-top: 20px;">
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top: 36px;">Mouse Redragon Cobra Chroma</h5>
+                <p class="card-text">• Usa cabo.<br>• Possui uma roda de rolagem.<br>• Possui 8 botões para um maior controle.<br>• Controle inteligente e fácil navegação.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Mouse2.webp" class="card-img-top" alt="..." style="margin-top: 50px;">
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top: 98px;">Mouse Logitech G Series G305</h5>
+                <p class="card-text">• Contém usb sem fio.<br>• Possui uma roda de rolagem.<br>• Possui 6 botões para um maior controle.<br>• Resolução de 12000dpi.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6"  style="margin-bottom: -52px;">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Mouse3.webp" class="card-img-top" alt="..." style="margin-top: 50px;">
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top: 100px;">Mouse Razer Viper</h5>
+                <p class="card-text">• Usa cabo.<br>• Criado para levar a qualquer lugar.<br>• Com sensor óptico.<br>• Com luzes para melhorar a experiência de uso.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7" style="margin-bottom: -52px;">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Mouse4.webp" class="card-img-top" alt="..." style="margin-top: 50px;">
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top: 35px;">Mouse Logitech G Series Hero G403</h5>
+                <p class="card-text">• Possui uma roda de rolagem.<br>• Resolução de 25600dpi.<br>• Controle inteligente e fácil navegação.<br>• Criado para levar a qualquer lugar.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <!-- Fim-Card-Mouse -->
+
+        <!-- Modal-Mouses -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mouse Redragon Cobra Chroma</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Com mais de 20 anos de experiência na fabricação de produtos, a Redragon inova dia a dia no design e na qualidade. Seu objetivo é produzir equipamento de alta qualidade para os jogadores, com excelente desempenho e a um preço acessível. Os mouses da Redragon são adequados para todas as ocasiões, seja para se entreter em casa ou usá-lo no trabalho.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 142 em 12x R$13,54</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mouse Logitech G Series G305</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        O sensor HERO de próxima geração do mouse para jogo G305 LIGHTSPEED proporciona desempenho de 12.000 DPI e a conectividade sem fio do LIGHTSPEED oferece uma taxa de transmissão super-rápida de 1 ms.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 219 em 12x R$18,25</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mouse Razer Viper</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Desde 2005 a Razer é a marca de líder de estilo de vida para os jogadores. Tem projetado e construído o ecossistema de hardware, software e serviços mais grande do mundo. A localização de cada botão e curva dos mouses da Razer foram criados para se adaptar perfeitamente na sua mão. Graças a estes dispositivos, você terá uma experiência de jogo confortável e agradável.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 214 em 12x R$20,41</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mouse Logitech G Series Hero G403</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Com um tempo de resposta de 1 ms, o G403 é até 8x mais rápido do que os mouses padrão não projetados especificamente para jogos, oferecendo movimentos e cliques quase instantâneos. OG403 oferece tensionamento do botão de mola de metal avançado que mantém os botões primários esquerdo e direito do mouse posicionados para disparar com menos força. Isso significa uma sensação de botão, resposta e consistência excepcionais a cada clique.
+                    </div>
+                    <div class="modal-footer">
+                        <h5>R$ 225 em 12x R$21,46</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar para o carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="logo">
+            <img src="./assets/Logo.png" alt="MyLunch">
+        </div>
+        <div id="pedido">
+            <p>Cadastre seu e-mail para receber promoções: </p>
+            <input type="email" placeholder="E-mail">
+            <button id="cadastrar" type="button" class="btn btn-primary">CADASTRAR</button>
+        </div>
+    
+        <div id="links">
+            <img src="./assets/whatsapp.svg" alt="Whatsapp">
+            <img src="./assets/github.svg" alt="GitHub">
+            <img src="./assets/Instagram.png" alt="Instagram">
+            <img src="./assets/facebook.svg" alt="Facebook">
+        </div>
+    
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
