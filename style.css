@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: 0.2s;
 }
 
 header{
@@ -23,6 +24,7 @@ header div{
 }
 
 header img{
+    border-radius: 5px;
     padding: 5px;
     width: 200px;
 }
@@ -82,43 +84,6 @@ header #pesquisa p{
     margin: 0 10px 0 0;
 }
 
-main{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
-}
-
-main #cardapio #itens{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card{
-
-    transition: 0.2s;
-}
-
-.card:hover{
-    -webkit-box-shadow: 0px 0px 20px 5px #000000; 
-    box-shadow: 0px 0px 13px #000000;
-}
-
-.card button{
-    border: none;
-
-    transition: 0.2s;
-}
-
-.card button:hover{
-    background-color: #3b89ff;
-}
-
-.card button:focus{
-    box-shadow: none;
-}
-
 .modal-footer button{
     border: none;
     background-color: #008000;
@@ -133,11 +98,6 @@ main #cardapio #itens{
 .modal-footer button:focus{
     background-color: #006300;
 }
-
-#carouselExampleControls .carousel-inner{
-    box-shadow: 0px 5px 15px #000000;   
-}
-
 
 #carouselExampleControls button{
     border: solid 3px #ffff00;
@@ -161,19 +121,125 @@ main #cardapio #itens{
     background-color: #ffffd140;
 }
 
-.line-top{
+main{
     display: flex;
-    margin-top: 40px;
-    margin-bottom: -35px;
+    flex-wrap: wrap;
 
+    justify-content: space-evenly;
 }
 
-.line-top h3{
+.cards{
+    height: 700px;
+    width: 300px;
+    margin-top: 15px;
+
+    border: solid 1px #000000;
+    border-radius: 8px;
+}
+
+.cards:hover{
+    box-shadow: 0 0 10px #000000;
+}
+
+.cards .produtos img{
+    width: 85%;
+}
+
+.cards .botoes button{
+    height: 40px;
+    width: 225px;
+    
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #1157d9;
+
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.cards .botoes button:hover{
+    background-color: #3372e8;
+}
+
+.cards .botoes button:focus{
+    box-shadow: 0px 0px 2px 2px #181818;
+}
+
+.cards .botoes{
+    display: flex;
+
+    align-items: center;    
+    justify-content: center;
+}
+
+.cards .botoes .icon-btn{
+    width: 50px;
+    margin-left: 5px;
+
+    border-radius: 3px;
+}
+
+.cards .botoes .icon-btn:hover{
+    background-color: #309230
+}
+
+.cards .botoes .icon-btn:focus{
+    background-color: #309230;
+    border: solid 2px rgb(0, 116, 0);
+
+    box-shadow: 0px 0px 2px 2px #309230;
+}
+
+.cards .precos{
+    display: block;
+
+    height: 80px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cards .precos h3{
+    color: #008000;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.cards .produtos{
+    display: flex;
+    
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: solid 1px #000000;
+}
+
+.cards .produtos:hover{
+    filter: brightness(1.25);
+}
+
+.cards .descricao{
+    padding: 5px;
+    height: 300px;
+    color: #000000;
+}
+
+.cards .descricao h4{
+    padding-top: 10px;
+    padding-left: 5px;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-
-    margin-left: 2.9%;
 }
+
+.cards .descricao p{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
 
 footer{
     display: flex;
@@ -198,6 +264,7 @@ footer #links img{
 }
 
 footer #logo img{
+    border-radius: 5px;
     width: 250px;
     cursor: pointer;
 
