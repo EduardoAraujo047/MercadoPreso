@@ -146,8 +146,8 @@ main{
 }
 
 .cards .produtos img:hover{
-    -webkit-transform: scale(1.1);
-   transform: scale(1.1);
+    -webkit-transform: scale(0.9,0.9);
+   transform: scale(0.9,0.9);
 }
 
 .cards .botoes button{
