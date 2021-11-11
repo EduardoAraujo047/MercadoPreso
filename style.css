@@ -99,28 +99,6 @@ header #pesquisa p{
     background-color: #006300;
 }
 
-#carouselExampleControls button{
-    border: solid 3px #ffff00;
-    border-radius: 50%;
-
-    width: 100px;
-    height: 100px;
-
-    position: absolute;
-    top: 50%;
-    margin-left: 100px;
-    transform: translate(-50%, -50%);
-
-    transition: 0.2s;
-}
-
-#carouselExampleControls button:hover{
-    -webkit-box-shadow: 0px 0px 20px 5px #000000; 
-    box-shadow: 0px 0px 20px 5px #000000;
-
-    background-color: #ffffd140;
-}
-
 main{
     display: flex;
     flex-wrap: wrap;
@@ -278,7 +256,7 @@ footer #logo img{
 }
 
 footer #logo, footer #links{
-    width: 2%;
+    width: 50px;
     text-align: center;
 }
 
@@ -346,4 +324,84 @@ footer #pedido input{
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer #logo{
+        width: 100%;
+    }
+
+    footer #links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer #pedido p {
+        width: 200px;
+        text-align: center;
+    }
+
+    footer #links img{
+        width: 26px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    footer #pedido input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header #carrinho .profi {
+        display: none;
+    }
+
+    header #carrinho {
+        margin: auto;
+    }
+
+    header #pesquisa input {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header #carrinho{
+        display: none;
+    }
+
+    header #pesquisa input {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header img{
+        width: 140px;
+    }
+
+    header #carrinho{
+        display: none;
+    }
+
+    header #pesquisa input{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header #carrinho #config{
+        display: none;
+    }
+
+    header img{
+        width: 140px;
+    }
 }
