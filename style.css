@@ -51,6 +51,15 @@ header #carrinho img{
     width: 35px;
 }
 
+#buy img {
+    width: 300px;
+    margin-left: 50px;
+}
+
+#buy h3, #buy h5 {
+    padding: 10px;
+}
+
 header #carrinho img:hover{
     cursor: pointer;
 }
