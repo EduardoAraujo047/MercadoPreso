@@ -336,6 +336,12 @@ footer #pedido input{
 }
 
 
+@media screen and (max-width: 2560px){
+    footer {
+        margin-top: 139px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     footer {
@@ -361,9 +367,43 @@ footer #pedido input{
     }
 }
 
+@media screen and (max-width: 505px){
+    header #carrinho .profi {
+        display: none;
+    }
+
+    header #carrinho .account {
+        margin-left: auto;
+    }
+
+    header #pesquisa input {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    header img {
+        width: 170px;
+    }
+
+    header #carrinho .account {
+        margin: auto;
+    }
+
+    header #pesquisa input {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 445px) {
     footer #pedido input {
         width: 250px;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    header #carrinho {
+        margin: auto;
     }
 }
 
@@ -381,9 +421,23 @@ footer #pedido input{
     }
 }
 
+@media screen and (max-width: 425px) {
+    header #carrinho #config{
+        display: none;
+    }
+
+    header img{
+        width: 140px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     header #carrinho{
         display: none;
+    }
+
+    header #pesquisa {
+        width: 180px;
     }
 
     header #pesquisa input {
@@ -402,15 +456,5 @@ footer #pedido input{
 
     header #pesquisa input{
         width: 150px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    header #carrinho #config{
-        display: none;
-    }
-
-    header img{
-        width: 140px;
     }
 }
